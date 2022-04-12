@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/sscraig/Development/Mod3/phase-3-ruby-oo-self-cash-register-lab/lib/cash_register.rb:44 CashRegister#void_last_transaction:
+
+    [1;34m35[0m: [32mdef[0m [1;34mvoid_last_transaction[0m()
+    [1;34m36[0m:     [32mif[0m @quantity == [1;34m0[0m
+    [1;34m37[0m:         [1;36mself[0m.total -= [1;36mself[0m.last_transaction[[1;34m1[0m]
+    [1;34m38[0m:         [1;36mself[0m.items.delete_at([1;36mself[0m.items.index([1;36mself[0m.last_transaction[[1;34m0[0m]))
+    [1;34m39[0m:         
+    [1;34m40[0m:     [32melse[0m
+    [1;34m41[0m:         [1;36mself[0m.total -= ([1;36mself[0m.last_transaction[[1;34m1[0m] * [1;36mself[0m.last_transaction[[1;34m2[0m])
+    [1;34m42[0m:         [1;36mself[0m.last_transaction[[1;34m2[0m].times {[1;36mself[0m.items.delete_at([1;36mself[0m.items.index([1;36mself[0m.last_transaction[[1;34m0[0m]))}
+    [1;34m43[0m:     [32mend[0m
+ => [1;34m44[0m: binding.pry
+    [1;34m45[0m: [32mend[0m
+

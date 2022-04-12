@@ -1,0 +1,17 @@
+
+[1mFrom:[0m /home/sscraig/Development/Mod3/phase-3-ruby-oo-self-cash-register-lab/lib/cash_register.rb:21 CashRegister#add_item:
+
+    [1;34m13[0m: [32mdef[0m [1;34madd_item[0m(item, price, quantity=[1;34m0[0m, discount=@discount)
+    [1;34m14[0m:     [32munless[0m quantity > [1;34m0[0m
+    [1;34m15[0m:         [1;36mself[0m.total += price
+    [1;34m16[0m:     [32melse[0m 
+    [1;34m17[0m:         [1;36mself[0m.total += price * quantity
+    [1;34m18[0m:     [32mend[0m
+    [1;34m19[0m: 
+    [1;34m20[0m:     [32mif[0m [1;36mself[0m.discount > [1;34m0[0m
+ => [1;34m21[0m:         binding.pry
+    [1;34m22[0m:         [1;36mself[0m.total 
+    [1;34m23[0m: 
+    [1;34m24[0m:     [32mend[0m
+    [1;34m25[0m: [32mend[0m
+
